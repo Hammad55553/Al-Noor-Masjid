@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-500: #d4af37;
+  --color-gold-600: #aa8c2c;
+  --color-emerald-900: #064e3b;
+  --color-emerald-950: #022c22;
+  --font-sans: 'Inter', sans-serif;
+  --font-arabic: 'Amiri', serif;
+  --font-urdu: 'Noto Nastaliq Urdu', serif;
+}
+
+@layer base {
+  body {
+    @apply bg-emerald-950 text-white min-h-screen overflow-x-hidden transition-colors duration-500;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', serif;
+  line-height: 1.8;
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  line-height: 2;
+}
+
+.glass-panel {
+  @apply bg-emerald-900/30 backdrop-blur-md border border-emerald-500/20 rounded-2xl;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.emerald.950');
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.gold.500');
+  border-radius: 4px;
+}
