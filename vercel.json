@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/sunni/:path*",
+            "destination": "https://hadithapi.pages.dev/api/:path*"
+        },
+        {
+            "source": "/api/shia/:path*",
+            "destination": "https://www.thaqalayn-api.net/api/:path*"
+        }
+    ]
+}
